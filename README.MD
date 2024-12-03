@@ -1,6 +1,6 @@
 ## NEOVIM-CONFIGURATION
 
-Just my neovim setup so I can pull it from other machines
+Just my neovim setup so I can pull it from other machines.
 This nvim setup is almost the same as Josean's. Highly recommend for getting 
 started with neovim. Watch the whole thing don't just copy and paste, he 
 explains everything perfectly.
