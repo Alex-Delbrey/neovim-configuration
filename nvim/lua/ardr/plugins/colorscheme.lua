@@ -29,7 +29,9 @@ return {
             colors = function(colors)
               return {
                 main_keywords = "#e39817",
+                strings = "#5db374",
                 operators = colors.functions:desaturated(10),
+                functions = "#5d82b3",
               }
             end,
           },
