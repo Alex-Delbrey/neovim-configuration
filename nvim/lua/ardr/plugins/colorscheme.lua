@@ -1,9 +1,9 @@
 return {
-  'folke/tokyonight.nvim',
+  "folke/tokyonight.nvim",
   priority = 1000,
   config = function()
     require("tokyonight").setup({
-      -- Make background transparent
+      -- -- Make background transparent
       transparent = true,
       style = "night",
       styles = {
@@ -11,6 +11,6 @@ return {
         floats = "transparent",
       },
     })
-    vim.cmd("colorscheme tokyonight")
+    vim.cmd [[colorscheme tokyonight]]
   end
 }

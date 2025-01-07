@@ -4,7 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-    { "folke/neodev.nvim", opts = {} },
+    { "folke/neodev.nvim",                   opts = {} },
   },
   config = function()
     -- import lspconfig plugin
@@ -83,6 +83,14 @@ return {
       function(server_name)
         lspconfig[server_name].setup({
           capabilities = capabilities,
+        })
+      end,
+      ["denols"] = function()
+        -- configure deno server
+        lspconfig["denols"].setup({
+          capabilities = capabilities,
+          on_attach = on_attach,
+          root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
         })
       end,
       ["svelte"] = function()

@@ -20,7 +20,7 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- colorscheme
---vim.cmd.colorscheme "tokyonight-night"
+--vim.cmd.colorscheme "catpuccin"
 opt.signcolumn = "yes"
 
 -- backspace
@@ -34,4 +34,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.scrolloff = 20
-
